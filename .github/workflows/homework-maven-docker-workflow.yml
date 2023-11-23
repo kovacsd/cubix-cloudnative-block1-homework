@@ -60,5 +60,6 @@ jobs:
       contents: read
 
     steps:
+    - uses: actions/checkout@v3
     - name: verify docker image
       run: ./verify-image.sh
